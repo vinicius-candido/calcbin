@@ -42,9 +42,34 @@ public class Main {
 	}
 	
 	private static void converteRecursivo(int numero, int base){
+		String result;
 		if(numero>0){
-			converteRecursivo(numero/base, base);
-			System.out.print(numero%base);
+			if(base==16){
+				converteRecursivo(numero/base, base);
+				result = Integer.toString(numero%base);
+				if(numero%base == 10) { result = result.substring(0, result.length()-1);
+					System.out.print("A");}
+				else if(numero%base == 11) { result = result.substring(0, result.length()-1);
+					System.out.print("B");
+				}
+				else if(numero%base == 12) { result = result.substring(0, result.length()-1);
+					System.out.print("C");
+				}
+				else if(numero%base == 13) { result = result.substring(0, result.length()-1);
+					System.out.print("D");
+				}
+				else if(numero%base == 14) { result = result.substring(0, result.length()-1);
+					System.out.print("E");
+				}
+				else if(numero%base == 15) { result = result.substring(0, result.length()-1);
+					System.out.print("F");
+				}else
+				System.out.print(result);
+			}
+			else{
+				converteRecursivo(numero/base, base);
+				System.out.print(numero%base);
+			}
 		}
 	}
 	
