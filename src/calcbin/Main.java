@@ -1,6 +1,6 @@
 /**
- * Este programa em Java converte numero Decimal para base X, onde X = 2, 3, 4, 5, 6, 7,8, 9, ou 16
- * Tambem converte numeros base X para Decimal, onde X = 2, 3, 4, 5, 6, 7,8, 9, ou 16
+ * Este programa em Java converte numero Decimal para base X, onde X = 2, 3, 4, 5, 6, 7, 8, 9, ou 16
+ * Tambem converte numeros base X para Decimal, onde X = 2, 3, 4, 5, 6, 7, 8, 9, ou 16
  * 
  * @author Vinicius Carvalho
  * @course Arquitetura de Computadores
