@@ -1,9 +1,10 @@
 /**
+ * Este programa em Java converte numero Decimal para base X, onde X = 2, 3, 4, 5, 6, 7,8, 9, ou 16
+ * Tambem converte numeros base X para Decimal, onde X = 2, 3, 4, 5, 6, 7,8, 9, ou 16
+ * 
  * @author Vinicius Carvalho
  * @course Arquitetura de Computadores
  * @project Conversor Binario
- * Este programa em Java converte numero Decimal para base X, onde X = 2, 3, 4, 5, 6, 7,8, 9, ou 16
- * Tambem converte numeros base X para Decimal, onde X = 2, 3, 4, 5, 6, 7,8, 9, ou 16
  */
 
 package calcbin;
@@ -51,17 +52,17 @@ public class Main {
 			if(op==2){
 				System.out.println("Informe um numero qualquer que sera convertido em decimal:");	
 				x = n.next();
+				String entr = x.toUpperCase();
 				System.out.println("Informe a base do numero digitado (2-base 2, 3-base 3, 4-base 4, ..., 8-octal, 16-hexadecimal)");
 				base = n.nextInt();
-				System.out.print("Resultado de "+ x +" (base "+ base +") em decimal: ");
-				converteXRecursivo(x, base);
+				System.out.print("Resultado de "+ x +" (base "+ base +") em decimal: "+ converteXRecursivo(entr, base));
 				System.out.println("\n\n");
 			}
 		}while(op != 0);
 	}
 
 	/**
-	 * Converte um numero decimal em determinada base e ja imprime na tela
+	 * Converte um numero decimal em determinada base e no final imprime na tela
 	 * @param numero numero decimal que sera convertido para uma base
 	 * @param base base selecionada para conversao
 	 */
@@ -105,7 +106,6 @@ public class Main {
 	 */
 	private static int converteXRecursivo(String entrada, int base) {
 		if (entrada.equals("")) return 0;
-		entrada.toUpperCase();
 		int result = 0, aux = 0;
 		for (int i = 0; i < entrada.length(); i++) {
 			char c = entrada.charAt(i);
