@@ -6,6 +6,7 @@ ALUNO: VINÍCIUS CÂNDIDO DE CARVALHO
 PARA RODAR O PROGRAMA É NECESSARIO JRE 1.8.0 OU SUPERIOR
 Para executá-lo importe o projeto java em uma IDE (no desenvolvimento foi utilizado o Eclipse Kepler).
 Todo o código está no arquivo \calcbin\src\calcbin\Main.java
+Caso prefira, pode-se importar o projeto disponível no GitHub: https://github.com/vinicius-candido/calcbin.git
 
 Para converter um número decimal em outra base:
  Após executar, tecle "1" e depois <Enter>
